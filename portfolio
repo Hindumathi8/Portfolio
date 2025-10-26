@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hindumathi Challari | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1>Hindumathi</h1><br>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#internship">Internship</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul><br>
+      <button id="theme-toggle">🌙</button>
+    </nav>
+  </header>
+
+  <section id="about" class="section hero">
+<img src="assets/https://ibb.co/4wxZ4gVj" alt="Hindumathi Challari" class="profile-pic" />
+    <div class="intro">
+      <h2>Hindumathi Challari</h2>
+      <p class="role">Electronics & Communication Engineering Student | Web Developer</p>
+      <p class="description">
+        I am a passionate B.Tech student specializing in Electronics and Communication Engineering at Ramachandra College of Engineering. I love exploring technology, robotics, and web development. I am seeking internship opportunities to learn, grow, and contribute.
+      </p>
+      <div class="buttons">
+        <a href="#" class="btn">Download Resume</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="section">
+    <h2>Education</h2>
+    <div class="card">
+      <h3>Bachelor of Technology (ECE)</h3>
+      <p>Ramachandra College of Engineering, Eluru (2023 – Pursuing)</p>
+      <p>CGPA: 83.3%</p>
+    </div>
+  </section>
+
+  <section id="internship" class="section">
+    <h2>Internship</h2>
+    <div class="card">
+      <h3>Python Internship – SkillDzire</h3>
+      <p>May–June 2025</p>
+      <p>Experience in debugging, core Python concepts, and problem-solving.</p>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="card"><h3>Seed Sowing Robot Using Node MCU</h3><p>Wi-Fi-controlled robot with soil moisture sensors and motorized dispensing.</p></div><br><br>
+    <div class="card"><h3>Soil Moisture Monitoring System</h3><p>Arduino-based real-time moisture tracking and automated irrigation.</p></div><br><br>
+    <div class="card"><h3>User Data Collection Form</h3><p>Web form using HTML & CSS with validation and backend submission.</p></div><br><br>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="card"><br><br>
+      <p><strong>Technical:</strong> Python, HTML, CSS</p><br><br>
+      <p><strong>Soft Skills:</strong> Creativity, Teamwork, Adaptability, Quick Learning</p>
+    </div>
+  </section>
+
+  <section id="certifications" class="section">
+    <h2>Certifications</h2>
+    <div class="card">
+      <ul><br><br>
+        <li>Python – Cisco (2025)</li><br><br>
+        <li>HTML – Simplilearn (2024)</li><br><br>
+        <li>CSS – Simplilearn (2024)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <div class="card">
+      <p><strong>Phone:</strong> 9390211326</p>
+      <p><strong>Email:</strong> chinnesreechallari@gmail.com</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/challari-hindhumathi-406464291" target="_blank">Profile</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/Hindumathi8" target="_blank">Hindumathi8</a></p>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Hindumathi Challari | Portfolio</p>
+  </footer>
+</body>
+</html>
+:root {
+  --bg: #0d1117;
+  --text: #c9d1d9;
+  --accent: #58a6ff;
+  --card: #161b22;
+  --light-bg: #ffffff;
+  --light-text: #111;
+  --light-card: #f0f0f0;
+  --transition-speed: 0.3s;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  scroll-behavior: smooth;
+  transition: background var(--transition-speed), color var(--transition-speed);
+}
+
+body.light {
+  background: var(--light-bg);
+  color: var(--light-text);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: var(--card);
+  padding: 1rem 2rem;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.navbar h1 {
+  margin: 0;
+  color: var(--accent);
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 5px;
+  transition: background var(--transition-speed);
+}
+
+.nav-links a:hover {
+  background: var(--accent);
+  color: white;
+}
+
+#theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: var(--accent);
+}
+
+.section {
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: auto;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.profile-pic {
+  width: 180px;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  box-shadow: 0 0 15px var(--accent);
+}
+
+.intro h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.role {
+  font-style: italic;
+  color: var(--accent);
+}
+
+.description {
+  margin: 1rem 0;
+  line-height: 1.6;
+}
+
+.buttons .btn {
+  margin-right: 1rem;
+}
+
+.card {
+  background: var(--card);
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 10px rgba(88, 166, 255, 0.1);
+  transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(88, 166, 255, 0.3);
+}
+
+body.light .card {
+  background: var(--light-card);
+}
+
+.btn {
+  background: var(--accent);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background var(--transition-speed);
+}
+
+.btn:hover {
+  background: #1f6feb;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+}
+
+.btn-outline:hover {
+  background: var(--accent);
+  color: white;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  background: #222;
+  color: white;
+  transition: background var(--transition-speed);
+}
+
+body.light .contact-form input,
+body.light .contact-form textarea {
+  background: #ddd;
+  color: #000;
+}
+
+.contact-form button {
+  margin-top: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: var(--card);
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+body {
+  background: linear-gradient(135deg, #0d1117, #1a1f2b);
+  background-attachment: fixed;
+  background-size: cover;
+  color: var(--text);
+  transition: background var(--transition-speed), color var(--transition-speed);
+}
+
+.section h2 {
+  position: relative;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  animation: slideIn 0.8s ease forwards;
+  opacity: 0;
+}
+
+.section.visible h2 {
+  opacity: 1;
+}
+
+.section h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 60px;
+  height: 3px;
+  background: var(--accent);
+  box-shadow: 0 0 10px var(--accent);
+  animation: glowLine 1.5s ease infinite alternate;
+}
+
+@keyframes glowLine {
+  from {
+    width: 60px;
+    box-shadow: 0 0 5px var(--accent);
+  }
+  to {
+    width: 80px;
+    box-shadow: 0 0 15px var(--accent);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.profile-pic {
+  width: 180px;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  box-shadow: 0 0 15px var(--accent);
+}
+
+const sections = document.querySelectorAll('.section');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1 });
+
+sections.forEach(section => observer.observe(section));
